@@ -28,7 +28,14 @@ elif escolha ==2 :
     print(f"A subtração de {n1}-{n2}= foi de {sub(n1,n2)}")
 elif escolha == 3:
     print(F"A multiplicação de {n1} x {n2}= foi de {multi(n1,n2)}")
-elif escolha == 4:
-    print(F"A dvisão de {n1}:{n2}= foi de {div(n1,n2)}")
 
+else:
+    while n2==0:
+        n2=int(input('digite o 2° novamente : '))
+        
+        print(F"A dvisão de {n1}:{n2}= foi de {div(n1,n2)}")
+        break
+        
+    print(F"A dvisão de {n1}:{n2}= foi de {div(n1,n2)}")
+        
     
